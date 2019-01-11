@@ -1,4 +1,5 @@
-public class Hw1 {
+// one
+public class Fib {
 
    public static void main(String[] args) {
       int x = 0; // n_0
