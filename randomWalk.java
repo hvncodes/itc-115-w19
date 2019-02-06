@@ -1,5 +1,8 @@
 import java.util.Random;
-
+/* John Nguyen
+ * ITC115
+ * Midterm Coding Project
+ */
 public class randomWalk {
 
 	public static void main(String[] args) {
