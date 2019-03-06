@@ -6,9 +6,8 @@ public class ProductMain {
 		Fruit apple = new Fruit("Apple", 100000001, 
 					"A round fruit of a tree of the rose family, which typically has thin red or green skin and crisp flesh.",
 				       0.10, 55);
-		//Vegetable carrot = new Vegetable("CRT", 0.1);
 		//apple.assestDescription(); prints a small desc
-		//System.out.println(carrot.getMarketValue());
+		//System.out.println(carrot.getMarketValue())
 	}
 
 }
