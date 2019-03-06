@@ -10,4 +10,5 @@ public abstract class Product {
 	
 	//METHODS
 	public abstract String getPriceFormatted();
+	public abstract void toString();
 }
