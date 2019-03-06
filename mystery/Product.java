@@ -1,5 +1,5 @@
 //REPRESENTS A GENERIC PRODUCT
-
+// ##################################GETTERS AND SETTERS################################
 public abstract class Product {
 	//FIELDS
 	private String name;
