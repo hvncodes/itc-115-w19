@@ -30,7 +30,7 @@ public class Fruit extends Product {
         System.out.println(this.name);
         System.out.println(this.code);
         System.out.println(this.description);
-        System.out.println(this.value);
+        System.out.println(this.price);
         System.out.println(this.count);
         System.out.println(this.color);
 	}
