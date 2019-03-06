@@ -1,38 +1,36 @@
 import java.text.NumberFormat;
-import java.util.Locale;
 
-public class Fruit extends Product {
+public class Car extends Product {
 	//FIELDS
 	private String color;
+	private String make;
+	private String model;
+	private int year;
     
     //CONSTRUCTOR
-    public Fruit(String name, int code, String description, double price, int count, String color) {
-		if (name == null || code == null || description == null || price == null || count == null || color == null) {
-			throw new NullPointerException();
-        }
-		this.name = name;
-		this.code = code;
-		this.description = description;
-		this.price = price;
-		this.count = count;
+    public Car(String name, int code, String description, double price, int count, String color, String make, String model, int year) {
+		super(name, code, description, price, count);
         this.color = color;
+        this.make = make;
+        this.model = model;
+        this.year = year;
 	}
 	
 	@Override
 	public String getPriceFormatted() {
-        String formattedPrice = NumberFormat.getCurrencyInstance().format(this.price);
+        String formattedPrice = NumberFormat.getCurrencyInstance().format(super.getPrice());
         return formattedPrice;
 	}
 	
 	@Override
-	public void toString() {
-		System.out.println(this.color);
-        System.out.println(this.name);
-        System.out.println(this.code);
-        System.out.println(this.description);
-        System.out.println(this.price);
-        System.out.println(this.count);
-        System.out.println(this.color);
+	public String toString() {
+		String s = "Product: " + this.color + " " + super.getName() + "\n";
+		s += "Product Code: " + super.getCode() + "\n";
+		s += "Description: " + super.getDescription() + "\n";
+		s += "Price: " + this.getPriceFormatted() + "\n";
+		s += "Count: " + super.getCount() + "\n";
+		s += "Make/Model/Year: " + this.make + "/" + this.model + "/" + this.year + "/" + "\n";
+		return s;
 	}
 	
 }
