@@ -3,8 +3,7 @@ import java.util.Locale;
 
 public class Fruit extends Product {
 	//FIELDS
-	private String symbol;
-	double price;
+	String Color
 	
 	@Override
 	public String getPriceFormatted() {
