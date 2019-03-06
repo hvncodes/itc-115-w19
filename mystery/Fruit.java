@@ -9,7 +9,12 @@ public class Fruit extends Product {
 	@Override
 	public String getPriceFormatted() {
         	String formattedPrice = NumberFormat.getCurrencyInstance().format(this.price);
-        return formattedPrice;
-    }
-
+        	return formattedPrice;
+	}
+	
+	@Override
+	public void toString() {
+		//spit out data
+	}
+	
 }
