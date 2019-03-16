@@ -16,4 +16,5 @@ public class HarvardLawyer extends Lawyer {
         return super.applyForVacation() + super.applyForVacation() 
             + super.applyForVacation() + super.applyForVacation();
     }
+    
 }
