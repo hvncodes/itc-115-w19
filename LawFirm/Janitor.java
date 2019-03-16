@@ -17,5 +17,6 @@ public class Janitor extends Employee {
     
     public void clean() {
         //"Workin' for the man."
+        System.out.println("Workin' for the man.");
     }
 }
