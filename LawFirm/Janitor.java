@@ -1,5 +1,6 @@
 
 public class Janitor extends Employee {
+    
     public int showHours() {
         //2x work week
         return 2 * super.showHours();
@@ -19,4 +20,5 @@ public class Janitor extends Employee {
         //"Workin' for the man."
         System.out.println("Workin' for the man.");
     }
+    
 }
